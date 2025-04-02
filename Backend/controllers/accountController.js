@@ -21,7 +21,7 @@ class AccountsController {
         );
       }
 
-      res.send(`Successfully synced ${accounts.length} accounts to MongoDB`);
+      res.send(`Congratulations you successfully synced ${accounts.length} accounts to the MongoDB database`);
     } catch (error) {
       res.status(500).send('Error syncing accounts: ' + error.message);
     }

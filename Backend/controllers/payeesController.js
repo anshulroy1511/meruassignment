@@ -72,7 +72,7 @@ class PayeesController {
       const successCount = processedVendors.length + processedCustomers.length;
       const skippedCount = (vendors.length + customers.length) - successCount;
       
-      let message = `Successfully synced ${successCount} payees ` +
+      let message = ` Congratulations you Successfully synced ${successCount} payees ` +
                    `(${processedVendors.length} vendors, ${processedCustomers.length} customers)`;
       
       if (skippedCount > 0) {

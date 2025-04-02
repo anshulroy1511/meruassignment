@@ -37,14 +37,14 @@ class AuthController {
       const { access_token, refresh_token } = tokenResponse.data;
       
       // In a real app, store these tokens securely
-      console.log('Access Token:', access_token);
+      console.log('Access Token is :- ', access_token);
       console.log('Refresh Token:', refresh_token);
       console.log('Company ID (realmId):', realmId);
       
-      res.send(`Authentication successful! Tokens and realmId (${realmId}) logged to console.`);
+      res.send(`Congratulations, Authentication successfull! Tokens and realmId (${realmId}) logged to the console.`);
     } catch (error) {
       console.error('Auth error:', error.response ? error.response.data : error.message);
-      res.status(500).send('Authentication failed');
+      res.status(500).send('Authentication failed ');
     }
   }
 }

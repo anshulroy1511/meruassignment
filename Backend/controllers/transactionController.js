@@ -72,7 +72,7 @@ class TransactionsController {
       const successCount = processedPurchases.length + processedDeposits.length;
       const skippedCount = (purchases.length + deposits.length) - successCount;
       
-      let message = `Successfully synced ${successCount} transactions ` +
+      let message = ` Congratulations you Successfully synced ${successCount} transactions ` +
                    `(${processedPurchases.length} purchases, ${processedDeposits.length} deposits)`;
       
       if (skippedCount > 0) {
